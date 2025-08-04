@@ -1,0 +1,17 @@
+<div class="dashboard-container">
+  <h2>📋 Sessions de chat disponibles</h2>
+
+  <div *ngIf="sessions.length === 0">Aucune session pour le moment.</div>
+
+  <ul class="session-list">
+    <li *ngFor="let session of sessions" class="session-item">
+      <div>
+        <strong>Client :</strong> {{ session.starterName }}<br>
+        <strong>Messages :</strong> {{ session.messageCount }}
+      </div>
+      <a [routerLink]="['/agent']" [queryParams]="{ sessionId: session.sessionId }" class="join-button">
+        Rejoindre
+      </a>
+    </li>
+  </ul>
+</div>

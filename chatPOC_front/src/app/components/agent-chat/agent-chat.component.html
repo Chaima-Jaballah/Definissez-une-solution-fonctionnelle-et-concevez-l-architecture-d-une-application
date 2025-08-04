@@ -1,0 +1,19 @@
+<div class="chat-container">
+  <h3 class="chat-title">🎧 Interface Agent</h3>
+
+  @if(messages.length === 0) {
+  <p class="chat-empty">Aucun message pour le moment.</p>
+  }@else {
+  <div class="chat-messages">
+    <div *ngFor="let msg of messages" class="message">
+      <strong class="message-author">{{ msg.from }} ({{ msg.role }}):</strong>
+      <span class="message-text">{{ msg.text }}</span>
+    </div>
+  </div>
+  }
+
+  <div class="chat-inputs">
+    <input [(ngModel)]="message" class="chat-input" placeholder="Votre réponse">
+    <button class="chat-button" (click)="send()">Répondre</button>
+  </div>
+</div>

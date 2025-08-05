@@ -30,7 +30,9 @@ npm install
 ng serve
 
 The app will be available at http://localhost:4200/
+
 Or:
+
 ng serve -o
 
 
@@ -39,15 +41,22 @@ ng serve -o
 
 cd ../ChatPOC_back
 
+
 On Windows CMD:
+
 set DB_USER=your_user
+
 set DB_PASSWORD=your_password
 
+
 On Linux/Mac:
+
 export DB_USER=your_user
+
 export DB_PASSWORD=your_password
 
 mvn spring-boot:run
+
 Make sure Java 17 and Maven are installed.
 
 ---

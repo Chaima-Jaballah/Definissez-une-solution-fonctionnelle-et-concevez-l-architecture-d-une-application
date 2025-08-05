@@ -44,20 +44,22 @@ cd ../ChatPOC_back
 
 On Windows CMD:
 
-set DB_USER=your_user
+set DB_USERNAME=your_user
 
 set DB_PASSWORD=your_password
 
 
 On Linux/Mac:
 
-export DB_USER=your_user
+export USERNAME=your_user
 
 export DB_PASSWORD=your_password
 
 mvn spring-boot:run
 
 Make sure Java 17 and Maven are installed.
+
+Ensure that a database named yourcaryourway has been created before running the application.
 
 ---
 ## Final Notes
